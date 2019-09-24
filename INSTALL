@@ -1,0 +1,23 @@
+INSTALL steps
+
+- install python 3.7 for windows 
+- After install, install the python modules required for running plotly
+	1. pip install pandas
+	2. pip install plotly
+	3. pip install mysql-connector
+
+#To setup database
+	1. create databse named weather
+	2. create table by running table.sql file
+	3. increase max_allowed_packet MySQL paramter to 128M
+
+#To load new data
+	1. save the excel file as csv and store as data.csv
+	2. the columns should be 
+		timestamp
+		Label
+		value
+	3. run dump.py
+
+#To see plots
+	1. run plot.py
