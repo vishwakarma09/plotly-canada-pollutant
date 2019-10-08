@@ -1,0 +1,23 @@
+List of excels to be exported
+
+1. data - Quebec - old part 			-	CO hr, PM2,5 - BAM hr, O3 hr, SO2 hr, NOx hr, PM2,5 - T640 h
+
+2. dump80 - montreal station 80			- 	NOx hr, PM2,5 - BAM hr, O3 hr
+
+3. qc_levis_chamy						-	H2S hr,	O3 hr, PM2,5 - BAM hr
+
+4. qc_parc_george						-	O3 hr, PM2,5 - BAM hr, SO2 hr, NO2 hr, NOx h, NO hr, PM2,5 - T640 h
+
+5. qc_saint_garnier						-	PM2,5 - TEOM h, O3 hr, PM2,5 - BAM hr, NO2 hr, NO hr, NOx hr, PM2,5 - T640 h
+
+6. montreal_city	-	PM 2.5
+
+1. data - Quebec - old part 			-	CO hr, PM2,5 - BAM hr, O3 hr, NOx hr
+
+2. dump80 - montreal station 80			- 	NOx hr, PM2,5 - BAM hr, O3 hr
+
+3. qc_levis_chamy						-	O3 hr, PM2,5 - BAM hr
+
+4. qc_parc_george						-	O3 hr, PM2,5 - BAM hr,  NOx hr
+
+5. qc_saint_garnier						-	O3 hr, PM2,5 - BAM hr, NOx hr

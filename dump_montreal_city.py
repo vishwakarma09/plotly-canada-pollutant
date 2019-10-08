@@ -4,17 +4,17 @@ import mysql.connector
 mydb = mysql.connector.connect(user='root', password='',
                             host='localhost',
                             database='weather')
-source = 'qc_levis_chamy.csv'
+source = 'Montreal city.csv'
 cursor = mydb.cursor()
 try:
     with open(source) as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
-        base_sql = "INSERT INTO qc_levis_chamy (timestamp, Label, value) VALUES "
+        base_sql = "INSERT INTO montreal_city (timestamp, Label, value) VALUES "
         items = []
         counter = 0
         for row in csv_reader:
-            if counter < 10000:
-                items.append("('" + row[0] + "','" + row[1] + "',"+ row[2] + ")")
+            if counter < 1000:
+                items.append("('" + row[0] + "','CO',"+ row[1] + ")")
                 counter = counter + 1
             else:
                 delimiter = ","
@@ -35,7 +35,7 @@ try:
             counter = 0
 
 except TypeError as e:
-    print(e)
-    mydb.rollback()
+	print('error executing query' + e)
+	mydb.rollback()
 finally:
     mydb.close()

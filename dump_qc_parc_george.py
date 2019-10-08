@@ -25,8 +25,17 @@ try:
                 mydb.commit()
                 counter = 0
 
+        if counter>0:
+            delimiter = ","
+            insert_sql = base_sql + delimiter.join(items)
+            items = []
+            print(insert_sql)
+            cursor.execute(insert_sql)
+            mydb.commit()
+            counter = 0
+
 except TypeError as e:
-	print('error executing query' + e)
-	mydb.rollback()
+    print(e)
+    mydb.rollback()
 finally:
     mydb.close()
